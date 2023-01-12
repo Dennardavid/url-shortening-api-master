@@ -3,13 +3,3 @@
     padding: 0;
     box-sizing: border-box;
 }
-header{
-    display: flex;
-    justify-content: space-between;
-}
-.logo-list{
-    display: flex;
-}
-.hero-section{
-    display: flex;
-}

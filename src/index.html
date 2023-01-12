@@ -28,7 +28,8 @@
   </head>
   <body>
     <div class="main-div">
-      <header>
+      <!-- Nav bar -->
+      <nav>
         <div class="logo-list">
           <svg xmlns="http://www.w3.org/2000/svg" width="121" height="33">
             <path
@@ -48,29 +49,34 @@
             <a href="#">Sign up</a>
           </button>
         </div>
-      </header>
+      </nav>
 
       <main>
-        <section class="hero-section">
-          <div>
-            <h1>More than just shorter links</h1>
-            <p>
-              Build your brands recognition and get detailed insights on how
-              your links are performing
-            </p>
-            <button>Get started</button>
-          </div>
-          <div>
-            <img
-              src="../images/illustration-working.svg"
-              alt="illustration-working"
-            />
-          </div>
-        </section>
+        <!-- Intro section -->
+        <div class="hero-section">
+          <h1>More than just shorter links</h1>
+          <p>
+            Build your brands recognition and get detailed insights on how your
+            links are performing
+          </p>
+          <button>Get started</button>
+        </div>
+        <div>
+          <img
+            src="../images/illustration-working.svg"
+            alt="illustration-working"
+          />
+        </div>
 
-        <section>
-          <div></div>
-        </section>
+        <!-- Shorten link section -->
+        <div class="shorten-link">
+          <div>
+            <form action="#">
+              <input type="text" />
+              <input type="button" value="submit" />
+            </form>
+          </div>
+        </div>
       </main>
       <footer></footer>
     </div>
