@@ -46,12 +46,6 @@ For the social icons, you can either use the SVGs provided or a font icon librar
 
 
 
-Features
-  Pricing
-  Resources
-
-  Login
-  Sign Up
 
   More than just shorter links
 

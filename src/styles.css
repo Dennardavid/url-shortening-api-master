@@ -2,9 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 :root {
   --Cyan: hsl(180, 66%, 49%);
+  --Cyanhover:hsl(180, 75%, 60%);
   --DarkViolet: hsl(257, 27%, 26%);
   --Red: hsl(0, 87%, 67%);
   --Gray: hsl(0, 0%, 75%);
@@ -16,15 +18,45 @@
 nav {
   display: flex;
   justify-content: space-between;
-  position: fixed;
-  top: 0;
-  width: 100%;
+  margin-top: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 .logo-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.logo-list li {
+.logo-list ul {
+  margin-left: 30px;
+}
+.logo-list ul li {
   display: inline;
+  margin-left: 30px;
+  color: var(--GrayishViolet);
+}
+.logo-list ul li:hover,.sign-up a:hover{
+  color: black;
+}
+.sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-up a {
+  margin-right: 40px;
+  text-decoration: none;
+  color: var(--GrayishViolet);
+}
+.sign-up button {
+  padding: 10px 22px 10px 22px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--Cyan);
+  color: white;
+}
+.sign-up button:hover{
+  background-color: var(--Cyanhover);
 }
 /* Main section styles */
 .hero-section {
