@@ -3,10 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --Cyan: hsl(180, 66%, 49%);
+  --DarkViolet: hsl(257, 27%, 26%);
+  --Red: hsl(0, 87%, 67%);
+  --Gray: hsl(0, 0%, 75%);
+  --GrayishViolet: hsl(257, 7%, 63%);
+  --VeryDarkBlue: hsl(255, 11%, 22%);
+  --VeryDarkViolet: hsl(260, 8%, 14%);
+}
 /* Nav bar styles */
 nav {
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .logo-list {
   display: flex;
@@ -19,7 +31,7 @@ nav {
   display: flex;
 }
 .shorten-link {
-  background-color: hsl(0, 0%, 75%);
+  background-color: var(--Gray);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,7 +40,7 @@ nav {
 .url-input {
   background-image: url(../images/bg-shorten-desktop.svg);
   background-repeat: no-repeat;
-  background-color: hsl(257, 27%, 26%);
+  background-color: var(--DarkViolet);
   height: 100px;
   width: 1000px;
 }
@@ -36,7 +48,7 @@ nav {
 .first-footer {
   background-image: url(../images/bg-boost-desktop.svg);
   background-repeat: no-repeat;
-  background-color: hsl(257, 27%, 26%);
+  background-color: var(--DarkViolet);
   height: 200px;
   text-align: center;
 }
