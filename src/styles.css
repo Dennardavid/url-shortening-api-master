@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 :root {
   --Cyan: hsl(180, 66%, 49%);
-  --Cyanhover:hsl(180, 75%, 60%);
+  --Cyanhover: hsl(180, 75%, 60%);
   --DarkViolet: hsl(257, 27%, 26%);
   --Red: hsl(0, 87%, 67%);
   --Gray: hsl(0, 0%, 75%);
@@ -18,24 +18,23 @@
 nav {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
-  padding-left: 100px;
-  padding-right: 100px;
+  margin-top: 35px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 .logo-list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.logo-list ul {
-  margin-left: 30px;
-}
+
 .logo-list ul li {
   display: inline;
   margin-left: 30px;
   color: var(--GrayishViolet);
 }
-.logo-list ul li:hover,.sign-up a:hover{
+.logo-list ul li:hover,
+.sign-up a:hover {
   color: black;
 }
 .sign-up {
@@ -55,13 +54,47 @@ nav {
   background-color: var(--Cyan);
   color: white;
 }
-.sign-up button:hover{
+
+/* Main section styles */
+main {
+  margin-top: 70px;
+}
+.write-up {
+  align-self: center;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.write-up h1 {
+  font-weight: bolder;
+  font-size: 60px;
+  line-height: 70px;
+  margin-bottom: 10px;
+}
+.write-up p {
+  color: var(--GrayishViolet);
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.write-up button,
+.first-footer button {
+  padding: 10px 25px 10px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  background-color: var(--Cyan);
+  color: white;
+}
+.write-up button:hover,
+.first-footer button:hover,
+.submit:hover,
+.sign-up button:hover {
   background-color: var(--Cyanhover);
 }
-/* Main section styles */
 .hero-section {
   display: flex;
+  margin-bottom: 110px;
 }
+
 .shorten-link {
   background-color: var(--Gray);
   display: flex;
@@ -73,14 +106,50 @@ nav {
   background-image: url(../images/bg-shorten-desktop.svg);
   background-repeat: no-repeat;
   background-color: var(--DarkViolet);
-  height: 100px;
+  height: 120px;
   width: 1000px;
+  margin-top: -60px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.input {
+  width: 600px;
+  padding: 12px 0px 12px 0px;
+  border: none;
+  border-radius: 7px;
+  margin-right: 20px;
+}
+.submit {
+  background-color: var(--Cyan);
+  border: none;
+  padding: 10px 25px 10px 25px;
+  border-radius: 7px;
+  color: white;
+  font-size: 18px;
+}
+
 /* Footer styles */
 .first-footer {
   background-image: url(../images/bg-boost-desktop.svg);
   background-repeat: no-repeat;
   background-color: var(--DarkViolet);
   height: 200px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.first-footer h2 {
+  color: white;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.second-footer{
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
 }
