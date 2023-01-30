@@ -129,6 +129,27 @@ main {
   color: white;
   font-size: 18px;
 }
+.stats{
+  
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 100%;
+}
+.stats-write-up{
+  text-align: center;
+  width: 450px;
+  line-height: 30px;
+  align-self: center;
+}
+.stats-write-up h2{
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.tag-container{
+  display: flex;
+  justify-content: space-evenly;
+}
 
 /* Footer styles */
 .first-footer {
