@@ -129,26 +129,47 @@ main {
   color: white;
   font-size: 18px;
 }
-.stats{
-  
+.stats {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
   width: 100%;
 }
-.stats-write-up{
+.stats-write-up {
   text-align: center;
   width: 450px;
   line-height: 30px;
   align-self: center;
 }
-.stats-write-up h2{
+.stats-write-up h2 {
   font-weight: 700;
   padding-bottom: 20px;
 }
-.tag-container{
+.tag-container {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.tag-cards {
+  width: 320px;
+  padding: 40px 20px 30px 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+.tag-cards  h3{
+  margin-bottom: 20px;
+}
+.card-color {
+  background-color: var(--DarkViolet);
+  margin-top: -70px;
+  margin-bottom: 40px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Footer styles */
@@ -167,7 +188,7 @@ main {
   font-size: 35px;
   margin-bottom: 20px;
 }
-.second-footer{
+.second-footer {
   background-color: black;
   color: white;
   display: flex;
