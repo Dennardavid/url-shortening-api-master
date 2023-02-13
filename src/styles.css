@@ -27,13 +27,18 @@ nav {
   justify-content: center;
   align-items: center;
 }
-
-.logo-list ul li {
-  display: inline;
+.logo-list li a {
   margin-left: 30px;
   color: var(--GrayishViolet);
+  text-decoration: none;
+  transition: color 0.5s;
 }
-.logo-list ul li:hover,
+
+.logo-list li {
+  display: inline;
+  margin-left: 30px;
+}
+.page-links li a:hover,
 .sign-up a:hover {
   color: black;
 }
@@ -46,6 +51,7 @@ nav {
   margin-right: 40px;
   text-decoration: none;
   color: var(--GrayishViolet);
+  transition: color 0.5s;
 }
 .sign-up button {
   padding: 10px 22px 10px 22px;
@@ -53,6 +59,8 @@ nav {
   border-radius: 20px;
   background-color: var(--Cyan);
   color: white;
+  transition: background-color 0.7s;
+  transition-timing-function: ease-in-out;
 }
 
 /* Main section styles */
@@ -83,6 +91,8 @@ main {
   font-size: 18px;
   background-color: var(--Cyan);
   color: white;
+  transition: background-color 0.7s;
+  transition-timing-function: ease-in-out;
 }
 .write-up button:hover,
 .first-footer button:hover,
@@ -157,7 +167,7 @@ main {
   background-color: white;
   border-radius: 10px;
 }
-.tag-cards  h3{
+.tag-cards h3 {
   margin-bottom: 20px;
 }
 .card-color {
