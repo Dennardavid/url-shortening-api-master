@@ -31,7 +31,7 @@ nav {
   margin-left: 30px;
   color: var(--GrayishViolet);
   text-decoration: none;
-  transition: color 0.5s;
+  transition: 0.5s;
 }
 
 .logo-list li {
@@ -59,7 +59,7 @@ nav {
   border-radius: 20px;
   background-color: var(--Cyan);
   color: white;
-  transition: background-color 0.7s;
+  transition: 0.5s;
   transition-timing-function: ease-in-out;
 }
 
@@ -91,7 +91,7 @@ main {
   font-size: 18px;
   background-color: var(--Cyan);
   color: white;
-  transition: background-color 0.7s;
+  transition: 0.5s;
   transition-timing-function: ease-in-out;
 }
 .write-up button:hover,
@@ -131,19 +131,24 @@ main {
   border-radius: 7px;
   margin-right: 20px;
 }
+input[type="url"]::placeholder {
+  padding-left: 20px;
+}
 .submit {
   background-color: var(--Cyan);
   border: none;
   padding: 10px 25px 10px 25px;
   border-radius: 7px;
   color: white;
-  font-size: 18px;
+  font-size: 15px;
+  transition: 0.5s;
 }
 .stats {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 100px;
   width: 100%;
+  padding-bottom: 70px;
 }
 .stats-write-up {
   text-align: center;
@@ -155,7 +160,7 @@ main {
   font-weight: 700;
   padding-bottom: 20px;
 }
-.stats-write-up p{
+.stats-write-up p {
   color: hsl(252, 9%, 57%);
 }
 .tag-container {
@@ -174,15 +179,13 @@ main {
 .tag-cards h3 {
   margin-bottom: 20px;
 }
-.tag-cards p{
+.tag-cards p {
   color: hsl(252, 9%, 57%);
 }
-.card2{
-  z-index: +1;
+.card2 {
   margin-top: 40px;
 }
-.card3{
-  z-index: +1;
+.card3 {
   margin-top: 80px;
 }
 .card-color {
@@ -221,17 +224,21 @@ main {
   padding-top: 30px;
   padding-bottom: 50px;
 }
-.footer-features p {
+.footer-features a {
   margin-bottom: 20px;
   font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
 }
 .footer-features ul li {
   list-style: none;
   color: var(--Gray);
   margin-top: 13px;
+  transition: 0.5s;
 }
 .footer-features ul li:hover,
-.footer-features p:hover {
+.footer-features a:hover {
   color: var(--Cyan);
 }
 .social-media-links {
@@ -239,8 +246,8 @@ main {
 }
 .social-media-links li {
   list-style: none;
-  margin-right: 10px;
+  margin-right: 20px;
 }
-
-
-
+.social-media-links li svg :hover {
+  fill: var(--Cyan);
+}
