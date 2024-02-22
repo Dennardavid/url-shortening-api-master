@@ -100,6 +100,7 @@ main {
 .submit:hover,
 .sign-up button:hover {
   background-color: var(--Cyanhover);
+  cursor: pointer;
 }
 .hero-section {
   display: flex;
