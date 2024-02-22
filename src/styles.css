@@ -19,8 +19,8 @@ nav {
   display: flex;
   justify-content: space-between;
   margin-top: 35px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 13%;
+  padding-right: 13%;
 }
 .logo-list {
   display: flex;
@@ -69,8 +69,8 @@ main {
 }
 .write-up {
   align-self: center;
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: 13%;
+  width: 35%;
 }
 .write-up h1 {
   font-weight: bolder;
@@ -81,7 +81,8 @@ main {
 .write-up p {
   color: var(--GrayishViolet);
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 16px;
+  width: 65%;
 }
 .write-up button,
 .first-footer button {
@@ -102,6 +103,7 @@ main {
 }
 .hero-section {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 110px;
 }
 
@@ -113,11 +115,12 @@ main {
   align-items: center;
 }
 .url-input {
-  background-image: url(../images/bg-shorten-desktop.svg);
+  background-image: url(../images/background2.png);
   background-repeat: no-repeat;
-  background-color: var(--DarkViolet);
-  height: 120px;
-  width: 1000px;
+  background-size: 100%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  width: 74%;
   margin-top: -60px;
   border-radius: 7px;
   display: flex;
@@ -163,12 +166,14 @@ input[type="url"]::placeholder {
 .stats-write-up p {
   color: hsl(252, 9%, 57%);
 }
-.tag-container {
+.Cards-container {
   display: flex;
   justify-content: space-evenly;
   margin-top: 50px;
   margin-bottom: 50px;
-}
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+} 
 .tag-cards {
   width: 320px;
   padding: 40px 20px 30px 20px;
@@ -181,6 +186,8 @@ input[type="url"]::placeholder {
 }
 .tag-cards p {
   color: hsl(252, 9%, 57%);
+  font-size: 14px;
+  line-height: 27px;
 }
 .card2 {
   margin-top: 40px;
@@ -188,7 +195,7 @@ input[type="url"]::placeholder {
 .card3 {
   margin-top: 80px;
 }
-.card-color {
+.article-image {
   background-color: var(--DarkViolet);
   margin-top: -70px;
   margin-bottom: 40px;
@@ -202,10 +209,10 @@ input[type="url"]::placeholder {
 
 /* Footer styles */
 .first-footer {
-  background-image: url(../images/bg-boost-desktop.svg);
+  background-image: url(../images/background.png);
   background-repeat: no-repeat;
-  background-color: var(--DarkViolet);
-  height: 200px;
+  background-size: 100% 100%;
+  padding: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
