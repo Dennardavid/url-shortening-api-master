@@ -119,21 +119,27 @@ main {
   background-image: url(../images/background2.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
+  padding-top: 2.2%;
+  padding-bottom: 2.2%;
   width: 74%;
   margin-top: -60px;
   border-radius: 7px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+.input-form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 .input {
-  width: 600px;
-  padding: 12px 0px 12px 0px;
+  width: 75%;
+  padding: 15px 0px 15px 0px;
   border: none;
   border-radius: 7px;
-  margin-right: 20px;
 }
 input[type="url"]::placeholder {
   padding-left: 20px;
@@ -144,8 +150,9 @@ input[type="url"]::placeholder {
   padding: 10px 25px 10px 25px;
   border-radius: 7px;
   color: white;
-  font-size: 15px;
+  font-size: 18px;
   transition: 0.5s;
+  width: 15%;
 }
 .stats {
   display: flex;
@@ -174,13 +181,14 @@ input[type="url"]::placeholder {
   margin-bottom: 50px;
   padding-left: 2.5%;
   padding-right: 2.5%;
-} 
+}
 .tag-cards {
   width: 320px;
   padding: 40px 20px 30px 20px;
   background-color: white;
   border-radius: 10px;
   height: 300px;
+  z-index: 1;
 }
 .tag-cards h3 {
   margin-bottom: 20px;
@@ -195,6 +203,15 @@ input[type="url"]::placeholder {
 }
 .card3 {
   margin-top: 80px;
+}
+hr {
+  height: 10px;
+  width: 40%;
+  margin: auto;
+  position: relative;
+  top: 210px;
+  border: none;
+  background-color: var(--Cyan);
 }
 .article-image {
   background-color: var(--DarkViolet);
