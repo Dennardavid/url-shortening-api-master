@@ -138,11 +138,14 @@ main {
 .input {
   width: 75%;
   padding: 15px 0px 15px 0px;
-  border: none;
+  border: 2px solid var(--Gray);
+  outline: none;
   border-radius: 7px;
+  text-indent: 15px;
 }
-input[type="url"]::placeholder {
-  padding-left: 20px;
+.input:focus {
+  outline: none;
+  border: 1px solid var(--Cyan);
 }
 .submit {
   background-color: var(--Cyan);
