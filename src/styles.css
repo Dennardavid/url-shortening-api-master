@@ -107,7 +107,11 @@ main {
   justify-content: space-between;
   margin-bottom: 110px;
 }
-
+.desk-guy {
+  width: 130%;
+  position: relative;
+  right: 150px;
+}
 .shorten-link {
   background-color: #e3e3e3;
   display: flex;
@@ -138,7 +142,7 @@ main {
 .input {
   width: 75%;
   padding: 15px 0px 15px 0px;
-  border: 2px solid var(--Gray);
+  border: 1px solid var(--Gray);
   outline: none;
   border-radius: 7px;
   text-indent: 15px;
