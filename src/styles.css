@@ -107,11 +107,6 @@ main {
   justify-content: space-between;
   margin-bottom: 110px;
 }
-.desk-guy {
-  width: 130%;
-  position: relative;
-  right: 150px;
-}
 .shorten-link {
   background-color: #e3e3e3;
   display: flex;
