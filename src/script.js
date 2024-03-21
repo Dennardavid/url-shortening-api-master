@@ -1,14 +1,27 @@
 const apiURL = "https://cleanuri.com/api/v1/shorten";
-const submitButton = document.querySelector(".submit");
-const formData = new FormData(document.querySelector(".input-form"));
 
-submitButton.addEventListener("click", async function (event) {
+let formElement = document.querySelector(".input-form");
+const urlToShorten = document.querySelector("input").value;
+
+formElement.addEventListener("submit", function (event) {
   event.preventDefault();
-  const request = await fetch(apiURL, {
+
+  fetch(apiURL, {
     method: "POST",
-    mode: "no-cors",
-    body: formData,
-  });
-  const response = await request.json();
-  console.log(...response);
+    headers: {
+      Accept: "application / json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ url: urlToShorten }),
+  })
+    .then((response) => {
+      if (!response.ok) {
+        console.log("Failed to shorten URL");
+      }
+      console.log(response);
+      return response.json();
+    })
+    .catch((error) => {
+      console.error("Error", error);
+    });
 });
