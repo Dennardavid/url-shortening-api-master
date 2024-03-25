@@ -305,3 +305,12 @@ hr {
     font-size: 17px;
   }
 }
+@media screen and (max-width: 1266px) {
+  .write-up {
+    margin-left: 8%;
+    width: 37%;
+  }
+  .tag-cards {
+    width: 317px;
+  }
+}
