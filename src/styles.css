@@ -278,3 +278,30 @@ hr {
 .social-media-links li svg :hover {
   fill: var(--Cyan);
 }
+@media screen and (max-width: 1282px) {
+  nav {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  .write-up {
+    margin-left: 8%;
+  }
+  .write-up p {
+    width: 90%;
+  }
+
+  .url-input {
+    padding-top: 2.1%;
+    padding-bottom: 2.1%;
+    width: 85%;
+  }
+
+  .input {
+    padding: 11px 0px 11px 0px;
+  }
+
+  .submit {
+    padding: 12px 25px 12px 25px;
+    font-size: 17px;
+  }
+}

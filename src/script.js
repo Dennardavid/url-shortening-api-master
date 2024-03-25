@@ -8,8 +8,7 @@ const apiURL = `https://api.tinyurl.com/create/`;
 // Grabbing html Elements
 let formElement = document.querySelector(".input-form");
 const urlToShorten = document.querySelector("input");
-
-console.log(urlToShorten);
+const linksDiv = document.querySelector(".links_shortened");
 
 /* Event listener on the form to wait for submit */
 formElement.addEventListener("submit", function (event) {
