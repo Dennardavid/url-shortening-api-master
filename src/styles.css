@@ -311,6 +311,11 @@ hr {
     width: 37%;
   }
   .tag-cards {
-    width: 317px;
+    width: 310px;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .tag-cards {
+    width: 300px;
   }
 }
