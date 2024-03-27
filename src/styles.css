@@ -114,6 +114,13 @@ main {
   justify-content: center;
   align-items: center;
 }
+.links_shortened {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-direction: column;
+}
 .url-input {
   background-image: url(../images/background2.png);
   background-repeat: no-repeat;
@@ -159,7 +166,8 @@ main {
 .stats {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  justify-content: center;
+  margin-top: 30px;
   width: 100%;
   padding-bottom: 70px;
 }
