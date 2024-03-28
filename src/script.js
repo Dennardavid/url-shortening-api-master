@@ -10,6 +10,13 @@ let formElement = document.querySelector(".input-form");
 const urlToShorten = document.querySelector("input");
 const linksDiv = document.querySelector(".links_shortened");
 
+/* Create elements to be displayed on the screen */
+const newDiv = document.createElement("div");
+const innerDiv = document.createElement("div");
+const shortLink = document.createElement("p");
+const originalLink = document.createElement("p");
+const copyButton = document.createElement("button");
+
 /* Event listener on the form to wait for submit */
 formElement.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -43,26 +50,22 @@ formElement.addEventListener("submit", function (event) {
     });
 });
 
-function disiplayShortenedUrl(data) {
-  /* Create elements to be displayed on the screen */
-  const newDiv = document.createElement("div");
-  const innerDiv = document.createElement("div");
-  const shortLink = document.createElement("p");
-  const originalLink = document.createElement("p");
-  const copyButton = document.createElement("button");
+/* URL validation */
 
+/* Function to display the shortened URLS  */
+function disiplayShortenedUrl(data) {
   /* Style the newly created elements */
   shortLink.style.color = "hsl(180, 66%, 49%)";
   newDiv.style.cssText =
-    "display:flex; justify-content:space-between; align-items:center; width:74%; background-color:white; border-radius:10px; padding:10px; padding-left:30px; padding-right:30px; margin-bottom";
+    "display:flex; justify-content:space-between; align-items:center; width:74%; background-color:white; border-radius:10px; padding:10px; padding-left:30px; padding-right:30px; ";
 
   originalLink.textContent = `${data.data.url}`;
   shortLink.textContent = `${data.data.tiny_url}`;
   innerDiv.style.cssText =
-    "display:flex; width:300px; justify-content:space-between; align-items:center;";
+    "display:flex; width:350px; justify-content:space-between; align-items:center;";
   copyButton.textContent = "Copy";
   copyButton.style.cssText =
-    "background-color:hsl(180, 66%, 49%); border-radius:5px; padding:10px; padding-left:10px; padding-right:10px; color:white; border:none;";
+    "background-color:hsl(180, 66%, 49%); border-radius:5px; padding:5px; padding-left:20px; padding-right:20px; color:white; border:none;";
 
   innerDiv.appendChild(shortLink);
   innerDiv.appendChild(copyButton);
@@ -71,3 +74,8 @@ function disiplayShortenedUrl(data) {
   newDiv.appendChild(innerDiv);
   linksDiv.appendChild(newDiv);
 }
+
+copyButton.addEventListener("click", function () {
+  copyButton.textContent = "Copied!";
+  copyButton.style.backgroundColor = "hsl(257, 27%, 26%)";
+});
