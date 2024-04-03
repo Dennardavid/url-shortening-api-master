@@ -27,6 +27,7 @@ formElement.addEventListener("submit", function (event) {
   validateUrlAndFetch(event);
 });
 
+/* function to validate and fetch Url from the form */
 function validateUrlAndFetch(event) {
   event.preventDefault(); // Prevent default form submission
 
@@ -36,8 +37,8 @@ function validateUrlAndFetch(event) {
   // Regular expression to validate URL format
   const urlRegex = /^(ftp|http|https):\/\/[^ "]+$/;
 
+  /* Form validation conditional */
   if (!urlRegex.test(url)) {
-    // alert("Please enter a valid URL");
     wrongUrl.innerHTML = "Please add a valid URL/link";
     wrongUrl.style.cssText = "color: red; font-size:13px; font-style:italic;";
     urlToShorten.style.cssText = "border: 2px solid red";
@@ -47,10 +48,6 @@ function validateUrlAndFetch(event) {
     wrongUrl.style.cssText = "";
     urlToShorten.style.cssText = "border: 1px solid hsl(180, 66%, 49%)";
   }
-
-  // If URL is valid, you can continue with your form submission logic here
-  console.log("Valid URL:", url);
-  // return true;
 
   /* Fetching the shortened url */
   fetch("https://api.tinyurl.com/create/", {
