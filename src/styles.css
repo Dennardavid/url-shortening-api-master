@@ -121,6 +121,10 @@ main {
   margin-bottom: 30px;
   flex-direction: column;
 }
+.wrongUrlContainer {
+  width: 93%;
+  padding-top: 5px;
+}
 .url-input {
   background-image: url(../images/background2.png);
   background-repeat: no-repeat;
@@ -131,6 +135,7 @@ main {
   margin-top: -60px;
   border-radius: 7px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;

@@ -7,8 +7,9 @@ const apiURL = `https://api.tinyurl.com/create/`;
 
 // Grabbing html Elements
 let formElement = document.querySelector(".input-form");
-const urlToShorten = document.querySelector("input");
+const urlToShorten = document.querySelector(".input");
 const linksDiv = document.querySelector(".links_shortened");
+const wrongUrl = document.querySelector("#wrong_url");
 
 /* Create elements to be displayed on the screen */
 const newDiv = document.createElement("div");
@@ -17,9 +18,39 @@ const shortLink = document.createElement("p");
 const originalLink = document.createElement("p");
 const copyButton = document.createElement("button");
 
+/* Regex for form validation */
+const urlRegex = /^(ftp|http|https):\/\/[^ "]+$/;
+
 /* Event listener on the form to wait for submit */
 formElement.addEventListener("submit", function (event) {
-  event.preventDefault();
+  /* URL validation */
+  validateUrlAndFetch(event);
+});
+
+function validateUrlAndFetch(event) {
+  event.preventDefault(); // Prevent default form submission
+
+  /* Trim the URL to remove white spaces before and after*/
+  const url = urlToShorten.value.trim();
+
+  // Regular expression to validate URL format
+  const urlRegex = /^(ftp|http|https):\/\/[^ "]+$/;
+
+  if (!urlRegex.test(url)) {
+    // alert("Please enter a valid URL");
+    wrongUrl.innerHTML = "Please add a valid URL/link";
+    wrongUrl.style.cssText = "color: red; font-size:13px; font-style:italic;";
+    urlToShorten.style.cssText = "border: 2px solid red";
+    return; // Prevent form submission if URL is invalid
+  } else {
+    wrongUrl.innerHTML = "";
+    wrongUrl.style.cssText = "";
+    urlToShorten.style.cssText = "border: 1px solid hsl(180, 66%, 49%)";
+  }
+
+  // If URL is valid, you can continue with your form submission logic here
+  console.log("Valid URL:", url);
+  // return true;
 
   /* Fetching the shortened url */
   fetch("https://api.tinyurl.com/create/", {
@@ -48,9 +79,7 @@ formElement.addEventListener("submit", function (event) {
     .catch((error) => {
       console.error("Error", error);
     });
-});
-
-/* URL validation */
+}
 
 /* Function to display the shortened URLS  */
 function disiplayShortenedUrl(data) {
