@@ -75,16 +75,14 @@ function validateUrlAndFetch(event) {
   function disiplayShortenedUrl(data) {
     /* Style the newly created elements */
     shortLink.style.color = "hsl(180, 66%, 49%)";
-    newDiv.style.cssText =
-      "display:flex; justify-content:space-between; align-items:center; width:74%; background-color:white; border-radius:10px; padding:10px; padding-left:30px; padding-right:30px; margin-bottom:10px;";
+    newDiv.setAttribute("class", "new_div");
 
     originalLink.textContent = `${data.data.url}`;
     shortLink.textContent = `${data.data.tiny_url}`;
-    innerDiv.style.cssText =
-      "display:flex; width:350px; justify-content:space-between; align-items:center;";
+
+    innerDiv.setAttribute("class", "inner_div");
     copyButton.textContent = "Copy";
-    copyButton.style.cssText =
-      "background-color:hsl(180, 66%, 49%); border-radius:5px; padding:5px; padding-left:20px; padding-right:20px; color:white; border:none;";
+    copyButton.setAttribute("class", "copy_button");
 
     innerDiv.appendChild(shortLink);
     innerDiv.appendChild(copyButton);

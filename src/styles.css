@@ -240,6 +240,37 @@ hr {
   align-items: center;
 }
 
+/* Shortened fetched links styles */
+.new_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 74%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 10px;
+}
+
+.inner_div {
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copy_button {
+  background-color: hsl(180, 66%, 49%);
+  border-radius: 5px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  border: none;
+}
+
 /* Footer styles */
 .first-footer {
   background-image: url(../images/background.png);
@@ -291,6 +322,8 @@ hr {
 .social-media-links li svg :hover {
   fill: var(--Cyan);
 }
+
+/* Media querry 1 */
 @media screen and (max-width: 1282px) {
   nav {
     padding-left: 8%;
