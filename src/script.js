@@ -103,14 +103,3 @@ formElement.addEventListener("submit", function (event) {
   /* URL validation */
   validateUrlAndFetch(event);
 });
-
-var firstName = "David";
-
-const Setemi = {
-  firstName: "Setemi",
-  greeting: () => {
-    console.log(`Hello ${this.firstName}`);
-  },
-};
-
-Setemi.greeting();

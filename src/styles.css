@@ -98,7 +98,8 @@ main {
 .write-up button:hover,
 .first-footer button:hover,
 .submit:hover,
-.sign-up button:hover {
+.sign-up button:hover,
+.copy_button:hover {
   background-color: var(--Cyanhover);
   cursor: pointer;
 }
@@ -269,6 +270,8 @@ hr {
   padding-right: 20px;
   color: white;
   border: none;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 /* Footer styles */
