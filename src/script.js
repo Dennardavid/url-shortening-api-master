@@ -51,6 +51,8 @@ function renderLink(data) {
   newDiv.appendChild(innerDiv);
   linksDiv.appendChild(newDiv);
 
+  gsap.from(newDiv, { opacity: 0, y: 20, duration: 0.8 });
+
   /* Event listener for copy button */
   copyButton.addEventListener("click", function () {
     // Revert all buttons
